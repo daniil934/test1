@@ -1,0 +1,16 @@
+a = []
+a.push "c"
+a.push "p"
+a.push "u"   
+a.reverse!() 
+puts a
+    
+context 'a' do
+  it 'c p u' do 
+    if a.is_a? Array
+      expect(a).to eq(["u", "p", "c"])
+    else
+      raise "Error"
+    end
+  end
+end
