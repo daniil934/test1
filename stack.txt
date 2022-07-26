@@ -1,0 +1,12 @@
+a = []
+a.push "c"
+a.push "p"
+a.push "u"
+a.pop 
+puts a 
+    
+context 'a' do
+    it 'c p' do
+      expect(a).to eq(["c", "p"])
+    end
+  end
